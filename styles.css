@@ -548,6 +548,7 @@ form .fa{
             color: #000;
             position: absolute;
             left: 10px;
+            bottom: 180px;
         }
         form input{
             width: 90%;
