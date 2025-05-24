@@ -533,9 +533,12 @@ form .fa{
             padding: 10px;
         }
         .item .specialimg{
-            height: 70px;
+            height: 170px;
             width: 300px;
             border-radius: 6px;
+        }
+        .owl-carousel2{
+            margin-top: 130px;
         }
         .logtext h1{
             font-size: 24px;
@@ -563,5 +566,8 @@ form .fa{
         form .fa{
             font-size: 16px;
             margin: 0 6px;
+        }
+        .evidence h1{
+            font-size: 20px;
         }
 }
