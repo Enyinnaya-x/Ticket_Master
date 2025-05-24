@@ -86,6 +86,7 @@ body{
     border-radius: 8px;
     height: fit-content;
     position: relative;
+    bottom: 40px;
     width: 80%
 
 }
@@ -524,7 +525,7 @@ form .fa{
             font-size: 16px;
         }
         .evidence h1{
-            font-size: 24px;
+            font-size: 20px;
         }
         .evidence p{
             font-size: 12px;
@@ -566,8 +567,5 @@ form .fa{
         form .fa{
             font-size: 16px;
             margin: 0 6px;
-        }
-        .evidence h1{
-            font-size: 20px;
         }
 }
