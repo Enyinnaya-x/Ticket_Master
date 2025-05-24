@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket-Master</title>
+    <!-- link for owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <!-- link to my external css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to page icon -->
+    <link rel="icon" href="media/LOGO.png">
+    <!-- Link for google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Link for font awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Ticket Master</h1>
+        </div>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="About_Us.html">About</a>
+            <a href="mailto:ekevictor84@gmail.com">Contact</a>
+        </div>
+        <div class="loginbtn">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+    <nav class="specialnav">
+        <div class="logo" id="logoblock">
+            <h1>Ticket Master</h1>
+        </div>
+        <div class="hamburgermenu" id="hamburgericon">
+            <i class="fa fa-bars hamburger" aria-hidden="true" id="hamMenu"></i>
+        </div>
+        <div class="navlinks2">
+            <div class="canceldiv">
+            <h1>Ticket Master</h1>
+            <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+            <a href="index.html">Home <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="About_Us.html" target="_blank">About <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="mailto:ekevictor84@gmail.com">Contact <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="login.html">Login <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="signup.html">Sign Up <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <hr>
+        </div>
+    </nav>
+    <div class="textdiv">
+        <h1>Plan Your Dream Trip</h1>
+        <span>Create a custom itinerary in minutes</span>
+        <button>Start Planning</button>
+    </div>
+    <div class="paint">
+        <div class="owl-carousel">
+            <div>
+        
+                <img src="media/beach-chair.jpg" width="100%" alt="">
+        
+            </div>
+        
+            <div>
+        
+                <img src="media/beachbg2.jpg" width="100%" alt="">
+        
+            </div>
+        
+            <div>
+        
+                <img src="media/beachbg3.jpg" width="100%" alt="">
+        
+            </div>
+        
+            <div>
+        
+                <img src="media/beachbg4.jpg" width="100%" alt="">
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <div class="main">
+            <div class="book">
+                <h3>Build your itinerary</h3>
+                <input type="text" placeholder="City or Destination" id="city" required>
+                <input type="date" id="start-date" required>
+                <input type="date" id="end-date" required>
+                <input type="text" placeholder="Activities" id="activities" required>
+                <input type="text" placeholder="Number of People" id="num-people" required>
+                <button id="myButton">Add to Itinerary</button>
+            </div>
+            <div class="screenshot" id="screenshot">
+                <i class="fa fa-check-circle" aria-hidden="true" id="icon2"><small id="code"></small></i>
+                <h3>Your Itinerary</h3>
+                <span class="destination" id="location2"></span>
+                <span>Date : <p id="date2"></p></span>
+                <span>Activities : <p id="actions2"></p></span>
+                <span>Number of People : <p id="number-people2"></p></span>
+            </div>
+            <div class="yours">
+                <h3>Your Itinerary</h3>
+                <span class="destination" id="location"></span>
+                <span>Date : <p id="date"></p></span>
+                <span>Activities : <p id="actions"></p></span>
+                <span>Number of People : <p id="number-people"></p></span>
+                <span>Status : <p id="status"><i class="fa fa-check-circle" aria-hidden="true" id="icon"></i></p></span>
+                <button id="downloadButton">Download Itinerary</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2025 Ticket Master. All rights reserved.</p>
+    </footer>
+</body>
+<!-- Link to owl carousel javascript file -->
+<script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="owlcarousel/dist/owl.carousel.min.js"></script>
+<!-- link to external javascript file -->
+<script src="script.js"></script>
+<!-- link to html2canvas javascript file -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</html>

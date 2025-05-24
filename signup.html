@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- link to page icon -->
+    <link rel="icon" href="media/LOGO.png">
+    <!-- link to my external css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link for owl carousel -->
+    <!-- link for font awesome icons -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body class="loginbody">
+    <nav class="loginnav navbar">
+        <div class="logo">
+            <h1>Ticket Master</h1>
+        </div>
+        <div class="navlinks">
+            <a href="index.html" class="loginlink">Home</a>
+            <a href="About_Us.html" target="_blank" class="loginlink">About</a>
+            <a href="mailto:ekevictor84@gmail.com" class="loginlink">Contact</a>
+        </div>
+        <div class="loginbtn">
+            <a href="login.html">Login</a>
+            <!-- <a href="signup.html">Sign Up</a> -->
+        </div>
+    </nav>
+    <hr>
+    <nav class="specialnav loginspecialnav">
+        <div class="logo loginlogo" id="logoblock">
+            <h1>Ticket Master</h1>
+        </div>
+        <div class="hamburgermenu loginham" id="hamburgericon">
+            <i class="fa fa-bars hamburger" aria-hidden="true" id="hamMenu"></i>
+        </div>
+        <div class="navlinks2">
+            <div class="canceldiv">
+                <h1>Ticket Master</h1>
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+            <a href="index.html">Home <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="About_Us.html" target="_blank">About <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="mailto:ekevictor84@gmail.com">Contact <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="login.html">Login <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="signup.html">Sign Up <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <hr>
+        </div>
+    </nav>
+    <div class="login">
+        <div class="logtext">
+            <h1>Sign Up</h1>
+        </div>
+        <form action="">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+            <div class="orcontainer">
+                <div class="line"></div>
+                <span>OR</span>
+                <div class="line"></div>
+            </div>
+            <button><i class="fa fa-facebook-square" aria-hidden="true"></i>Sign Up with Facebook</button>
+            <button><i class="fa fa-google" aria-hidden="true"></i>Sign Up with Google</button>
+        </form>
+    </div>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navlinks2 = document.querySelector('.navlinks2');
+        const hamburgericon = document.getElementById('hamburgericon');
+
+        hamburger.addEventListener('click', () => {
+            navlinks2.classList.toggle('active');
+            hamburgericon.style.display = 'none';
+            document.getElementById('logoblock').style.display = 'none';
+        });
+
+        // Close the hamburger when clicked
+
+        const close = document.querySelector('.close');
+        close.addEventListener('click', () => {
+            navlinks2.classList.remove('active');
+            hamburgericon.style.display = 'block';
+            document.getElementById('logoblock').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

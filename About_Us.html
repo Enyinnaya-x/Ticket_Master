@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- link to page icon -->
+    <link rel="icon" href="media/LOGO.png">
+    <!-- link to my external css file -->
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- link for owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+</head>
+<body class="aboutusbody">
+    <nav class="loginnav navbar">
+        <div class="logo">
+            <h1>Ticket Master</h1>
+        </div>
+        <div class="navlinks">
+            <a href="index.html" class="loginlink">Home</a>
+            <a href="About_Us.html" target="_blank" class="loginlink">About</a>
+            <a href="mailto:ekevictor84@gmail.com" class="loginlink">Contact</a>
+        </div>
+        <div class="loginbtn">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+    <hr>
+    
+    <main class="newmain">
+        <div class="aboutus">
+            <h1>About Us</h1>
+        </div>
+        <div class="lamba">
+            <p>At Ticket Master, we believe that every journey should be as enjoyable to plan as it is to experience. That’s why
+            we’re on a mission to simplify the way you organize your travel whether it’s a weekend getaway or a multi-country
+            adventure.
+            
+            Founded by travelers, for travelers, our team knows firsthand how overwhelming planning can be juggling bookings,
+            schedules, maps, and wish lists. So we created a smarter solution: an intuitive platform that turns scattered travel
+            ideas into clear, personalized itineraries.
+            
+            We combine technology with human insight to help you map out every detail flights, accommodations, activities, and
+            hidden gems all in one place. And because life is unpredictable, we make it easy to adjust your plans on the go.
+            
+            At our core, we’re more than a tool we’re your travel partner. Whether you’re a solo explorer, a family on holiday, or
+            a business traveler on the move, Ticket Master is here to help you travel with confidence, clarity, and
+            excitement.
+            
+            Let us take care of the details so you can focus on the experience.</p>
+        </div>
+        <div class="evidence">
+            <h1>Don't Just Take Our Word for It</h1>
+            <p>Here are some of the reviews from our users:</p>
+        </div>
+        <div class="owl-carousel owl-carousel2">
+            <div class="item">
+                <img class="specialimg" src="media/1.png" width="100%" alt="">
+            </div>
+            <div class="item">
+                <img class="specialimg" src="media/2.png" width="100%" alt="">
+            </div>
+            <div class="item">
+                <img class="specialimg" src="media/3.png" width="100%" alt="">
+            </div>
+            <div class="item">
+                <img class="specialimg" src="media/4.png" width="100%" alt="">
+            </div>
+            <div class="item">
+                <img class="specialimg" src="media/5.png" width="100%" alt="">
+            </div>
+            <div class="item">
+                <img class="specialimg" src="media/6.png" width="100%" alt="">
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p>&copy; 2025 Ticket Master. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+<!-- Link to owl carousel javascript file -->
+<script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="owlcarousel/dist/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true
+        });
+    });
+</script>
+</html>

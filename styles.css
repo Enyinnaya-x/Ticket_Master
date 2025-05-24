@@ -1,0 +1,560 @@
+.owl-carousel,
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel .owl-item,
+.owl-carousel .item {
+    height: 80vh;
+    z-index: -1;
+}
+.owl-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+body{
+    font-family: "Inter",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    color: #fff;
+    width: 1220px;
+}
+.specialnav{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 0px 30px 0px 10px; */
+    color: #fff;
+    width: 100%;
+    display: none;
+    /* background-color: red; */
+}
+.specialnav .logo{
+    text-align: center;
+}
+.specialnav .hamburgermenu{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0px 20px;
+    /* background-color: red; */
+    position: relative;
+    bottom: 60px;
+}
+.specialnav h1{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+.specialnav .fa{
+    cursor: pointer;
+    font-size: 32px;
+}
+.navlinks2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #5c7280;
+    /* padding: 20px; */
+    border-radius: 8px;
+    height: fit-content;
+    position: relative;
+    z-index: -4;
+    line-height: 40px;
+    width: 80%;
+    display: none;
+}
+.navlinks2.active{
+    display: block;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    position: relative;
+    width: 80%
+
+}
+.navlinks2 a{
+    text-decoration: none;
+    color: #5c7280;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color: red; */
+    width: fit-content;
+}
+.navlinks2 a i{
+    margin-left: 10px;
+}
+.navlinks2 hr{
+    width: 100%;
+    height: 1px;
+    background-color: #5c7280;
+    /* border: none; */
+    /* margin: 10px 0; */
+}
+.canceldiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 95%;
+}
+.canceldiv h1{
+    color: #000;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+}
+.canceldiv .fa{
+    color: #000;
+    cursor: pointer;
+}
+.navlinks2 .fa{
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar a{
+    position: relative;
+}
+.navlinks a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5c7280;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out .3s;
+}
+.navlinks a:hover::after{
+    width: 100%;
+}
+.navlinks>a{
+    text-decoration: none;
+    color: #9e9a9a;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+.navlinks>a:hover{
+    color: #fff;
+}
+.loginbtn>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 20px;
+    background-color: #5c7280;
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+.paint{
+    background: rgba(0, 0, 0, 0.5);
+}
+.textdiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textdiv h1{
+    font-size: 50px;
+}
+.textdiv span{
+    font-size: 20px;
+    /* font-weight: 600; */
+}
+.textdiv button{
+    background-color: rgb(180, 0, 0);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 16px;
+    font-weight: 600;
+}
+main{
+    background-color: #faf2e6;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 15px 15px 20px #5c7280;
+    z-index: 1;
+}
+.yours{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 15px 15px 20px #5c7280;
+    width: 30%;
+    z-index: 1;
+}
+.yours span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.screenshot span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.book input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 100%;
+}
+.main button{
+    padding: 10px;
+    background-color: #5c7280;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.yours .destination{
+    font-weight: 700;
+    font-size: 24px;
+}
+.screenshot .destination{
+    font-weight: 700;
+    font-size: 24px;
+}
+span>p{
+    display: inline;
+    font-weight: 400;
+    font-size: 14px;
+}
+.yours .fa{
+    color: green;
+    font-size: 18px !important;
+    visibility: hidden;
+}
+.screenshot .fa{
+    color: green;
+    font-size: 18px !important;
+    visibility: hidden;
+}
+.screenshot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+.screenshot h3, span{
+    display: block;
+    margin-top: 20px;
+}
+.screenshot h3{
+    text-decoration: underline;
+}
+.screenshot p{
+    position: relative;
+    top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.screenshot .fa{
+    font-size: 26px !important;
+}
+small {
+    color: #000;
+    font-family: "Inter", sans-serif;
+}
+.aboutusbody{
+    background-color: #faf2e6;
+}
+.aboutus{
+    text-align: center;
+    margin: 0;
+}
+.aboutus h1{
+    text-decoration: underline;
+}
+.lamba{
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+}
+.evidence{
+    text-align: center;
+}
+.evidence p{
+    font-weight: 600;
+}
+.evidence h1{
+    text-decoration: underline;
+}
+.newmain{
+    height: 100vh;
+}
+.imagesdiv{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.owl-carousel2{
+   margin-top: 60px;
+}
+.owl-carousel .specialimg{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+}
+.item{
+    padding: 30px;
+}
+footer{
+    background-color: #faf2e6;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+.loginbody{
+    background-color: #faf2e6;
+}
+.loginnav{
+    position: relative;
+}
+.loginnav h1{
+    color: #000;
+}
+.navlinks .loginlink:hover{
+    color: #000;
+}
+.navlinks .loginlink{
+    font-size: 16px;
+}
+.logtext{
+    text-align: center;
+    color: #5c7280;
+}
+.login{
+    background-color: #fff;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+form>input{
+    padding: 10px;
+    border: 1px solid #5c7280;
+    border-radius: 8px;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.forgotdiv{
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+form a{
+    text-decoration: none;
+    color: #5c7280;
+    font-size: 14px;
+    font-weight: 600;
+}
+form button{
+    padding: 10px;
+    background-color: #5c7280;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.orcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+.orcontainer span {
+    margin: 0 16px;
+    color: #5c7280;
+    font-weight: 600;
+    position: relative;
+    background: #fff;
+    padding: 0 12px;
+    z-index: 1;
+}
+form .fa{
+    margin: 0 20px;
+    font-size: 25px;
+}
+@media (max-width : 430px){
+    .textdiv h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .owl-carousel,
+        .owl-carousel .owl-stage-outer,
+        .owl-carousel .owl-stage,
+        .owl-carousel .owl-item,
+        .owl-carousel .item{
+            height: 70vh;
+        }
+        .navbar{
+            display: none;
+        }
+        .specialnav{
+            display: block;
+        }
+        .textdiv{
+            top: 30%;
+            left: 50%;
+            transform: translate(-45%, -45%);
+        }
+        .textdiv span, button{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .owl-carousel img{
+            height: 70vh;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .main{
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+        .book, .yours, .screenshot{
+            width: 80%;
+        }
+        .aboutus h1{
+            font-size: 24px;
+        }
+        .aboutus p{
+            font-size: 16px;
+        }
+        .evidence h1{
+            font-size: 24px;
+        }
+        .evidence p{
+            font-size: 12px;
+        }
+        .item{
+            padding: 10px;
+        }
+        .item .specialimg{
+            height: 70px;
+            width: 300px;
+            border-radius: 6px;
+        }
+        .logtext h1{
+            font-size: 24px;
+        }
+        #logoblock{
+            /* display: none !important; */
+            visibility: hidden;
+        }
+        .loginham .fa{
+            color: #000;
+            position: absolute;
+            left: 10px;
+        }
+        form input{
+            width: 90%;
+            padding: 6px;
+            font-size: 14px;
+        }
+        form button{
+            width: 90%;
+            padding: 8px;
+            font-size: 14px;
+        }
+        form .fa{
+            font-size: 16px;
+            margin: 0 6px;
+        }
+}
