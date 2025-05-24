@@ -307,7 +307,7 @@ span>p{
 }
 .screenshot p{
     position: relative;
-    top: 6px;
+    top: 3px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -402,6 +402,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-self: center;
+}
+.loginbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 form{
     display: flex;
