@@ -591,6 +591,10 @@ form small{
             font-size: 16px;
             margin: 0 6px;
         }
+        form small{
+            position: relative;
+            right: 80px;
+        }
         .line{
            display: none;
         }
