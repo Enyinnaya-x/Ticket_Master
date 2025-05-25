@@ -563,7 +563,7 @@ form small{
             font-size: 24px;
         }
         .logtext img{
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
         #logoblock{
             /* display: none !important; */
@@ -579,11 +579,13 @@ form small{
             width: 300px;
             padding: 6px;
             font-size: 14px;
+            height: 40px;
         }
         form button{
             width: 300px;
             padding: 8px;
             font-size: 14px;
+            height: 40px;
         }
         form .fa{
             font-size: 16px;
