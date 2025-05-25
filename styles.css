@@ -86,7 +86,7 @@ body{
     border-radius: 8px;
     height: fit-content;
     position: relative;
-    bottom: 40px;
+    bottom: 130px;
     width: 80%
 
 }
@@ -573,7 +573,7 @@ form small{
             color: #000;
             position: absolute;
             left: 10px;
-            bottom: 180px;
+            bottom: 250px;
         }
         form input{
             width: 300px;
