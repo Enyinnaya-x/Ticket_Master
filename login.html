@@ -37,7 +37,7 @@
         <div class="hamburgermenu loginham" id="hamburgericon">
             <i class="fa fa-bars hamburger" aria-hidden="true" id="hamMenu"></i>
         </div>
-        <div class="navlinks2 hiddensignup">
+        <div class="hiddensignup">
             <div class="canceldiv">
                 <h1>Ticket Master</h1>
                 <i class="fa fa-times close" aria-hidden="true"></i>
@@ -73,11 +73,11 @@
     </div>
     <script>
         const hamburger = document.querySelector('.hamburger');
-            const navlinks2 = document.querySelector('.navlinks2');
-            const hamburgericon = document.getElementById('hamburgericon');
+        const hiddensignup = document.querySelector('.hiddensignup');
+        const hamburgericon = document.getElementById('hamburgericon');
 
             hamburger.addEventListener('click', () => {
-                navlinks2.classList.toggle('active');
+                hiddensignup.classList.toggle('active');
                 hamburgericon.style.display = 'none';
                 document.getElementById('logoblock').style.display = 'none';
             });
@@ -86,7 +86,7 @@
 
             const close = document.querySelector('.close');
             close.addEventListener('click', () => {
-                navlinks2.classList.remove('active');
+                hiddensignup.classList.remove('active');
                 hamburgericon.style.display = 'block';
                 document.getElementById('logoblock').style.display = 'block';
             });
