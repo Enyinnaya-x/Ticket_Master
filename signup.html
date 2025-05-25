@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Signup</title>
     <!-- link to page icon -->
     <link rel="icon" href="media/LOGO.png">
     <!-- link to my external css file -->
@@ -52,11 +52,14 @@
     </nav>
     <div class="login">
         <div class="logtext">
-            <h1>Sign Up</h1>
+            <!-- <h1>Sign Up</h1> -->
+             <img src="media/LOGO.png" alt="">
         </div>
-        <form action="">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+        <form action="" id="signupform">
+            <input type="email" placeholder="Email" required id="email">
+            <input type="password" placeholder="Password" required id="firstpassword" >
+            <input type="password" placeholder="Confirm Password" required id="secondpassword">
+            <small id="alertmssg"></small>
             <button type="submit">Sign Up</button>
             <div class="orcontainer">
                 <div class="line"></div>
@@ -86,6 +89,29 @@
             hamburgericon.style.display = 'block';
             document.getElementById('logoblock').style.display = 'block';
         });
+
+        // Password validation
+        const firstPassword = document.getElementById('firstpassword');
+        const secondPassword = document.getElementById('secondpassword');
+        const signupform = document.getElementById('signupform');
+        const email = document.getElementById('email');
+        const alertmssg0 = document.getElementById('alertmssg0');
+        var check = false
+
+        signupform.onsubmit = function(){
+            // Prevent form submission for demonstration purposes
+            event.preventDefault();
+
+            // Check if passwords match
+            if(firstPassword.value !== secondPassword.value) {
+                document.getElementById('alertmssg').innerHTML = "Passwords do not match!";
+                return false; // Prevent form submission
+            } else {
+                document.getElementById('alertmssg').innerHTML = "";
+                alert("Sign Up Successful!"); // Simulate successful sign up
+                return true; // Allow form submission
+            }
+        }
     </script>
 </body>
 </html>
